@@ -46,7 +46,7 @@ public class ServletContreMesure extends HttpServlet {
 			throws ServletException, IOException {
 		if (Integer.parseInt(request.getParameter("IdC")) > 0) {
 			ContreMesure c = new ContreMesure();
-			c.setIdV(Integer.parseInt(request.getParameter("IdV")));
+			c.setIdC(Integer.parseInt(request.getParameter("IdC")));
 			c.setDescription(request.getParameter("description"));
 			c.setSources(request.getParameter("sources"));
 			c.setTitre(request.getParameter("titre"));
